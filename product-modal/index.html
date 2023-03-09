@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Product Modal</title>
+  </head>
+  <body>
+    <!-- Global Container -->
+
+<!--    O IDEAL E SEMPRE CRIAR O CONTAINER PRINCIPAL NO COMÇO-->
+<!--    PRA CENTRALIZAR SEMPRE , PODE USAR O FLEX BOX QUE FICA FACIL-->
+    <div class="flex items-center justify-center min-h-screen bg-slate-100">
+      <!-- Card Container -->
+<!-- AQUI E SEMPRE PENSAR MOBILE FIRST PRIMEIRO, PRAS TELAS MENORES E COLUNA E PRAS MAIORES QUE SERIA MD A GENTE PENSA COMO TELA CHEIA JA QUE DA     -->
+      <div
+        class="flex flex-col p-6 m-3 space-y-10 bg-white rounded-2xl shadow-2xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16">
+
+<!--      E SEMPRE PENSANDO NO EIXO Y PRAS COLUNAS NO ESPACAMENTO E DEPOIS PRA QUANDO FOR TELA GRANDE NO EIXO X-->
+        <!-- Image Div -->
+        <div>
+<!--          SEMPRE COLOCAR A IMAGEM NA DIV, SENÃO ELE PODE CRESCER O QUANTO QUISER-->
+<!--AQUI COLOCAMOS A DURATION E O HOVER QUANDO O USUAIRO PASSAR NESSA IMAGEM, ELA MEIO QUE ESCALA MAIOR E ESSA TRANSIÇÃO TEM DURAÇÃO DE 200 seg -->
+          <img
+            src="images/headphone.png"
+            alt=""
+            class="mx-auto duration-200 w-60 hover:scale-105"
+          />
+        </div>
+
+       
+      </div>
+
+    </div>
+
+
+  </body>
+</html>
